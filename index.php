@@ -27,6 +27,6 @@
 			}
 		?>
 	</div>
-	<p class="footer">Powered by Steam.</p>
+	<p class="footer">Powered by <a href="http://steamcommunity.com/dev">Steam</a>. Fork me on <a href="http://github.com/zuzak/backlog">Github</a>.</p>
 </body>
 </html>
