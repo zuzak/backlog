@@ -1,0 +1,96 @@
+@import url(http://fonts.googleapis.com/css?family=Electrolize);
+body {
+	background-color:#4B5744;
+	font-family:'Electrolize',monospace;
+	text-align:center;
+}
+
+#gamesbox {
+	margin: 0 auto;
+}
+
+.game {
+	margin:10px;
+	width:184px;
+	border: 2px solid gray;
+	padding:0;
+	background-color:#737D6B;
+	display:inline-block;
+}
+
+.played {
+	border-color: lime;
+}
+
+.unplayed {
+	border-color: red;
+	background-color:#7A0000;
+	color:white;
+	letter-spacing:7px;
+	text-transform:uppercase;
+}
+.game img {
+	width:184px;
+	height:69px;
+	margin:0;
+}
+
+.game p {
+	font-size:12px;
+	margin:0;
+	padding:3px;
+}
+
+#error {
+	margin-left:30px;
+	margin-right:30px;
+	border:3px solid #990000;
+	color:white;
+	background-color:#7A0000;
+	letter-spacing:4px;
+	padding:3px;
+}
+
+
+#welcome {
+	width:400px;
+	margin-left:auto;
+	margin-right:auto;
+	border: 1px solid #646D5E;
+	padding:5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin-top:100px;
+}
+
+#welcome p#intro {
+	border-bottom: 1px solid #646D5E;
+	padding-top:5px;
+	padding-left:5px;
+	padding-right:5px;
+	margin-bottom:3px;
+	clear:both;
+	font-weight:bold;
+}
+
+input#steamid {
+	background-color: #646D5E;
+	border:1px solid black;
+	margin-left:2px;
+}
+
+.footer {
+	color:#343D2F;
+	font-size:8px;
+}
+
+#nav {
+	font-size:14px;
+	margin-top:2px;
+	margin-bottom:5px;
+}
+
+#nav a {
+	color:inherit;
+}
