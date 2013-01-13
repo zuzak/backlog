@@ -50,6 +50,9 @@ body {
 	height:16px;
 	padding:3px;
 }
+h1 a{
+	color:inherit;
+	text-decoration:inherit;
 #error {
 	margin-left:30px;
 	margin-right:30px;

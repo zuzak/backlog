@@ -21,7 +21,7 @@
 	}
 
 	if (isset($data["steamID"])) {
-		echo "<h1>".$data["steamID"]."'s backlog</h1>\n";
+		echo "<h1><a href=\"http://steamcommunity.com/$link/$id\">".$data["steamID"]."'s backlog</a></h1>\n";
 	} else {
 		echo "<h1>Your Steam Library</h1>";
 	}
