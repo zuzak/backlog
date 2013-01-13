@@ -11,7 +11,7 @@
 
 	$page = file_get_contents($url);
 	if (strpos($page,"The Steam Community is currently unavailable.") != false) {
-		die("<div id=\"error\">The Steam Community is currently unavailable.</div>");
+		die("<div id=\"error\">The Steam Community is currently unavailable. <a href=\"javascript:location.reload(true);\">(retry?)</a></div>");
 	}
 
 	try {
@@ -40,11 +40,16 @@
 		}
 		echo "played\">\n\t\t\t<a href=\"";
 		echo $game["storeLink"];
-		echo "\">\n\t\t\t\t<img alt=\"";
+		echo "\">\n\t\t\t\t<img class=\"gamelogo\" alt=\"";
 		echo $game["name"];
 		echo "\" src=\"";
 		echo $game["logo"];
-		echo "\"/>\n\t\t\t</a>\n\t\t\t<p>";
+		echo "\"/>\n\t\t\t</a>\n\t\t\t<p>\n";
+		/*
+		if (isset($game["statsLink"])) {
+			echo "\t\t\t\t<a href=\"" . $game["statsLink"] . "\">\n\t\t\t\t\t<img src=\"star.png\" class=\"achievlink\" />\n\t\t\t\t</a>\n";
+		} */
+		echo "\t\t\t\t<a href=\"steam://run/". $game["appID"] . "\">\n\t\t\t\t\t<img src=\"game.png\" class=\"playlink\" />\n\t\t\t\t</a>\n\t\t\t\t";
 		if ($played) {
 			echo $game["hoursOnRecord"]. " hours";
 			$playedgames++;

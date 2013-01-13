@@ -29,18 +29,27 @@ body {
 	letter-spacing:7px;
 	text-transform:uppercase;
 }
-.game img {
+.game img.gamelogo {
 	width:184px;
 	height:69px;
 	margin:0;
 }
 
+.game img.achievlink {
+	float:right;
+	height:16px;
+}
 .game p {
 	font-size:12px;
 	margin:0;
 	padding:3px;
 }
 
+.game img.playlink {
+	float:right;
+	height:16px;
+	padding:3px;
+}
 #error {
 	margin-left:30px;
 	margin-right:30px;
@@ -82,7 +91,7 @@ input#steamid {
 
 .footer {
 	color:#343D2F;
-	font-size:8px;
+	font-size:12px;
 }
 
 #nav {
@@ -93,4 +102,7 @@ input#steamid {
 
 .footer a {
 	color:inherit;
+}
+#error a {
+	color:gray;
 }
