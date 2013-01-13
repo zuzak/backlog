@@ -1,4 +1,5 @@
 <?php
+
 	require "xml.php";
 	$id = $_GET["id"];
 
@@ -29,6 +30,7 @@
 	$games = $data["games"]["game"];
 
 	$playedgames = 0;
+	echo "<div id=\"gamesbox\">";
 	foreach($games as $game) {
 
 //	for ($i = 0; $i <= count($games); $i++){
@@ -58,6 +60,7 @@
 		}
 		echo "</p>\n\t\t</div>\n";
 	}
+	echo "</div>";
 	echo "<p class=\"footer\">$playedgames games out of ".count($games)." played (".round(($playedgames/count($games)*100))."%).";
 
 ?>

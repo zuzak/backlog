@@ -5,12 +5,12 @@
 	<link href="stylesheet.css" type="text/css" rel="stylesheet" media="screen">
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="isotope/jquery.isotope.min.js"></script>
 	<script src="scripts.js"></script>
 	<meta name="description" content="">
 	<meta name="author" content="Douglas Gardner">
 </head>
 <body>
-	<div id="gamesbox">
 		<?php
 			if(isset($_GET["id"])) {
 				include "lookup.php";
